@@ -7,6 +7,8 @@ class HomePageContainer extends React.Component{
         super()
         this.state = {
             message : '',
+            loading:'false',
+            alert:'false'
         }
     }
 
@@ -18,21 +20,36 @@ class HomePageContainer extends React.Component{
 
     handleSubmit = e => {
         e.preventDefault()
+        this.setState({
+            loading:true
+        })
           database
             .ref("/web-profile-3d7fe")
             .push({
               message: this.state.message
             })
             .then(res => {
-              console.log('succes',res);
-              setTimeout(() => {
+              console.log('succes',res);  
                 this.setState({
                  message:''
                 });
-              }, 3000);
+                setTimeout(() => {
+                   this.setState({
+                       loading: false,
+                       alert: true
+                   }) 
+                }, 3000);
+                setTimeout(() => {
+                    this.setState({
+                        alert: false
+                    }) 
+                 }, 5000);
             })
             .catch(err => {
              console.log(err)
+             this.setState({
+                loading: false
+               });
             });
 
     }
@@ -40,7 +57,7 @@ class HomePageContainer extends React.Component{
     render(){
         return(
             <>
-                <HomePage handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+                <HomePage alert={this.state.alert} loading={this.state.loading} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
             </>
         )
     }

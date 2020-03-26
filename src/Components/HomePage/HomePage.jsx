@@ -3,7 +3,7 @@ import './HomePage.scss'
 import Navbar from '../Navbar/Navbar'
 
 
-const HomePage = ({handleChange, handleSubmit}) => {
+const HomePage = ({handleChange, handleSubmit, loading, alert}) => {
     return (
         <>
         <Navbar />
@@ -57,13 +57,17 @@ const HomePage = ({handleChange, handleSubmit}) => {
                 </form>
                 </div>
                 <div className="modal-footer">
-                <button onClick={handleSubmit} type="submit" className="btn btn-primary">Kirim</button>
+             <button onClick={handleSubmit} type="submit" className="btn btn-primary">{loading === true ? 'loading...' : 'kirim'}</button>
                 </div>
             </div>
             </div>
         </div>
             {/* modal */}
             <p className='txt-pesan mr-3 mb-2'>Klik ini yaa... </p>
+            {alert === true ? <div style={{position:'fixed', zIndex:'9999'}} className="alert alert-success" role="alert">
+ Berhasil terkirim!
+</div> : null }
+            
         </div>
         </>
     )
