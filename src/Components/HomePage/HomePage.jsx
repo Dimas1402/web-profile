@@ -58,6 +58,7 @@ const HomePage = ({handleChange, handleSubmit, loading, alert}) => {
                 </div>
                 <div className="modal-footer">
              <button onClick={handleSubmit} type="submit" className="btn btn-primary">{loading === true ? 'loading...' : 'kirim'}</button>
+             <i style={{color:'red', fontSize:'10px'}}>*nama pengirim pesan tidak akan di ketahui oleh saya :-)</i>
                 </div>
             </div>
             </div>
