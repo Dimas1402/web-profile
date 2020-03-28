@@ -1,9 +1,9 @@
 import React from 'react'
 import './HomePage.scss'
 import Navbar from '../Navbar/Navbar'
+import Modal from './Modal/modal'
 
-
-const HomePage = ({handleChange, handleSubmit, loading, alert}) => {
+const HomePage = ({ handleChange, handleSubmit, loading}) => {
     return (
         <>
         <Navbar />
@@ -31,45 +31,10 @@ const HomePage = ({handleChange, handleSubmit, loading, alert}) => {
                 </div>
             </div>
             </div>
-            <i
-            data-toggle='modal'
-            data-target='#exampleModal'
-            data-whatever='@mdo'
-            style={{ color: 'white' }}
-            className='fa fa-comment-dots icon-pesan m-4'
-            ></i>
             {/* modal */}
-            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-            <div className="modal-content">
-                <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Kirim kan pendapat anda tentang saya :-)</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-                </div>
-                <div className="modal-body">
-                <form >
-                    <div className="form-group">
-                    <label htmlFor="message-text" className="col-form-label">Message :</label>
-                    <textarea onChange={handleChange} className="form-control" name='message' id="message-text" defaultValue={""} />
-                    </div>
-                </form>
-                </div>
-                <div className="modal-footer">
-             <button onClick={handleSubmit} type="submit" className="btn btn-primary">{loading === true ? 'loading...' : 'kirim'}</button>
-             
-                </div>
-                <i className='m-2' style={{color:'red', fontSize:'10px'}}>*nama pengirim pesan tidak akan di ketahui oleh saya :-)</i>
-            </div>
-            </div>
-        </div>
+           <Modal handleChange={handleChange} handleSubmit={handleSubmit} loading={loading} />
             {/* modal */}
             <p className='txt-pesan mr-3 mb-2'>Klik ini yaa... </p>
-            {alert === true ? <div style={{position:'fixed', zIndex:'9999'}} className="alert alert-success" role="alert">
- Berhasil terkirim!
-</div> : null }
-            
         </div>
         </>
     )
