@@ -3,13 +3,17 @@ import './HomePage.scss'
 import Navbar from '../Navbar/Navbar'
 import Modal from './Modal/modal'
 
+
+
 const HomePage = ({ handleChange, handleSubmit, loading}) => {
     return (
         <>
-        <Navbar />
+        <Navbar />  
+        
         <div className='container-fluid page d-flex align-items-center  '>
             <div className='row'>
             <div className='col-md-12 col-text d-flex justify-content-center'>
+                
                 <div className='card bg-transparent card-text'>
                 <h1>I'm Frontend Developer.</h1>
                 <div className='card bg-tranparent'></div>
@@ -32,9 +36,10 @@ const HomePage = ({ handleChange, handleSubmit, loading}) => {
             </div>
             </div>
             {/* modal */}
-           <Modal handleChange={handleChange} handleSubmit={handleSubmit} loading={loading} />
+            <Modal handleChange={handleChange} handleSubmit={handleSubmit} loading={loading} />
             {/* modal */}
             <p className='txt-pesan mr-3 mb-2'>Klik ini yaa... </p>
+            
         </div>
         </>
     )

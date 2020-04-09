@@ -1,0 +1,90 @@
+{
+    "DataUser":[
+        {
+            "id":1,
+            "name":"AGE",
+            "class":"spasi1",
+            "isi":"19"
+        },
+        {
+            "id":2,
+            "name":"ADDRESS",
+            "class":"spasi2",
+            "isi":"Jl.RH.Umar rt02/04 Jatiasih,Bekasi"
+        },
+        {
+            "id":3,
+            "name":"E-MAIL",
+            "class":"spasi3",
+            "isi":"anugerahdimas469@gmail.com"
+        },
+        {
+            "id":4,
+            "name":"PHONE",
+            "class":"spasi4",
+            "isi":"0899 3985 800"
+        },
+        {
+            "id":5,
+            "name":"FREELANCE",
+            "class":"spasi5",
+            "isi":"Available"
+        }
+    ],
+    "Icon":[
+        {
+            "id":1,
+            "nameIcon":"fa fa-facebook-square m-4"
+        },
+        {
+            "id":2,
+            "nameIcon":"fa fa-twitter-square m-4"
+        },
+        {
+            "id":3,
+            "nameIcon":"fab fa-google-plus-square m-4"
+        },
+        {
+            "id":4,
+            "nameIcon":"fab fa-github-square m-4"
+        },
+        {
+            "id":5,
+            "nameIcon":"fab fa-whatsapp-square m-4"
+        }
+    ],
+    "IconSkill":[
+        {
+            "id":1,
+            "img":"https://cdn.worldvectorlogo.com/logos/javascript.svg"
+        },
+        {
+            "id":2,
+            "img":"https://cdn.worldvectorlogo.com/logos/react-1.svg"
+        },
+        {
+            "id":3,
+            "img":"https://cdn.worldvectorlogo.com/logos/redux.svg"
+        },
+        {
+            "id":4,
+            "img":"https://cdn.worldvectorlogo.com/logos/html5.svg"
+        },
+        {
+            "id":5,
+            "img":"https://cdn.worldvectorlogo.com/logos/css-5.svg"
+        },
+        {
+            "id":6,
+            "img":"https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg"
+        },
+        {
+            "id":7,
+            "img":"https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+        },
+        {
+            "id":8,
+            "img":"https://cdn.worldvectorlogo.com/logos/sass-1.svg"
+        }
+    ]
+}

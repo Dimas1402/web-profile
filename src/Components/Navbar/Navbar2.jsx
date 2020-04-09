@@ -6,11 +6,13 @@ import {Redirect, NavLink} from 'react-router-dom'
 // import { createBrowserHistory } from 'history';
 
 // const history = createBrowserHistory();
-const Navbar = () => {
+const NavbarTwo = () => {
     const [bgNavbar, setBgNavbar] = useState(false)
     const [loadPage, setLoadPage] = useState(false)
     const [id, setId] = useState(0)
     const[nvbar, setNvbar] = useState(false)
+    const [listId, setListId] = useState(false)
+
 
     useEffect(() => {
         (handleLoadPage())
@@ -22,7 +24,7 @@ const Navbar = () => {
         setBgNavbar(!bgNavbar)
     }
     const listenScrollEvent = e => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 100) {
           setNvbar(true)
         } else {
           setNvbar(false)
@@ -109,26 +111,24 @@ const Navbar = () => {
             <div className='mr-auto'></div>
             <div className='navbar-nav text-center'>
                 {/* {console.log(Data.Name[0].name)} */}
-                {Data.Name.map(res => (
-                    <NavLink exact activeClassName='active-list' to={`${res.link}`} >
+                <NavLink exact activeClassName='active-list' to={"/"} >
                 <p
-                    key={res.id}
                     style={{ color: 'white', cursor: 'pointer' }}
                     className='nav-item nav-link name-navbar m-1'
                     onClick={e => {
-                    setTimeout(() => setId(res.id),300)
+                    setTimeout(() => setId(1),300)
                     }}
                 >
-                    {res.name}
+                    Home
                 </p>
                 </NavLink>
-                ))} 
-                  {Data.NameTwo.map(res => (
+                 {Data.NameTwo.map(res => (
                      <a
                      key={res.id}
                      style={{ color: 'white', cursor: 'pointer' }}
-                     className='nav-item nav-link name-navbar m-1'
-                     href={res.link}  
+                     className={`nav-item nav-link name-navbar m-1 ${listId === res.id ? "active-list" : null}`}
+                     href={res.link} 
+                     onClick={() => setListId(res.id)}
                  >
                      {res.name}
                  </a>
@@ -140,4 +140,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarTwo

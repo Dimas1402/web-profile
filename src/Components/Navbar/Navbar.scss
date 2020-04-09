@@ -2,5 +2,63 @@
 
 p{
     font-family: 'Ubuntu Condensed', sans-serif;
+    
 }
-
+.bg-darkss{
+  background:#085471;
+}
+.bg-darks{
+  background:#085471;
+  -webkit-box-shadow: -5px 3px 15px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 3px 15px -6px rgba(0,0,0,0.75);
+box-shadow: -5px 3px 15px -6px rgba(0,0,0,0.75);
+transition: 1s;
+}
+.active-list{
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+}
+.flex-container-none{
+display: none;
+}
+.flex-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 9999;
+    width: 100%;
+    .box-1{
+        background-color: #332f2f;
+        width: 0;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        height: 100vh;
+       
+      }
+      .box-2{
+        background-color: #2b2a2a;
+        width: 0;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        height: 100vh;
+       
+      }
+      .box-3{
+        background-color: #2b2828;
+        width: 0;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        height: 100vh;
+       
+      }
+  }
+  @media only screen and(max-width:'768px'){
+    .active-list{
+      border-bottom: 2px solid white;
+      border-radius: 5px;
+    }
+  }

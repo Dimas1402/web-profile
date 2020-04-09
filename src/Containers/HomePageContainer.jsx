@@ -3,15 +3,18 @@ import HomePage from '../Components/HomePage/HomePage'
 import { database } from '../config/Firebase'
 import swal from 'sweetalert'
 
+
+
+
 class HomePageContainer extends React.Component {
     constructor () {
         super()
         this.state = {
         message: '',
         loading: 'false',
+        page:'false'
         }
     }
-
     handleChange = e => {
         this.setState(
         {
@@ -20,7 +23,6 @@ class HomePageContainer extends React.Component {
         () => console.log('name', this.state.message)
         )
     }
-
     handleSubmit = e => {
         e.preventDefault()
         this.setState({
@@ -49,7 +51,6 @@ class HomePageContainer extends React.Component {
             swal("Failed to send message", "You clicked the button!", "error");
         })
     }
-
     render () {
         return (
         <>
@@ -57,6 +58,8 @@ class HomePageContainer extends React.Component {
             loading={this.state.loading}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
+            handleCoba={this.handleCoba}
+            klik={this.handleCoba}
             />
         </>
         )
