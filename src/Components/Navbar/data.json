@@ -42,5 +42,32 @@
             "name":"Contact",
             "link":"#contact"
         }
-    ]
+    ],
+    "NameThree":[
+       {
+           "id":2,
+           "name":"Skills",
+           "link":"#skill"
+       },
+       {
+           "id":3,
+           "name":"Work Experience",
+           "link":"#work"
+       },
+       {
+           "id":4,
+           "name":"Education",
+           "link":"#education"
+       },
+       {
+           "id":5,
+           "name":"My Projects",
+           "link":"#projek"
+       },
+       {
+           "id":6,
+           "name":"Contact",
+           "link":"#contact"
+       }
+   ]
 }

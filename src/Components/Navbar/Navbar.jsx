@@ -123,7 +123,7 @@ const Navbar = () => {
                 </p>
                 </NavLink>
                 ))} 
-                  {Data.NameTwo.map(res => (
+                  {Data.NameThree.map(res => (
                      <a
                      key={res.id}
                      style={{ color: 'white', cursor: 'pointer' }}
