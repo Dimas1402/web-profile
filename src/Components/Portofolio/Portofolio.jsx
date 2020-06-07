@@ -138,6 +138,66 @@ const Portofolio = () => {
                 </div>
             </div>
             </div>
+            <div className='col-sm'>
+            <div data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true" className='card mt-3'>
+            <a href="https://github.com/Dimas1402/Muslim-Questions-App" target="_blank"  rel="noopener noreferrer" >
+                <img
+                className='card-img-top img-fluid img-pro'
+                src={require('../../Assets/muslimQ.png')}
+                alt=''
+                />
+                </a>
+                <div className='card-body'>
+                    
+                <h5 className='card-title'>Muslim Questions</h5>
+                <p className='card-text'>Create a online exam website </p>
+                <div  className="img-projek m-1">
+                <img data-toggle="tooltip" data-placement="bottom" title="React Native" className='m-1' style={{width:'20px', height:'20px'}} src='https://cdn.worldvectorlogo.com/logos/react.svg' alt="" />
+                <img data-toggle="tooltip" data-placement="bottom" title="Firebase" className='m-1' style={{width:'20px', height:'20px'}} src='https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png' alt="" />
+                <img data-toggle="tooltip" data-placement="bottom" title="Material UI" className='m-1' style={{width:'20px', height:'20px'}} src='https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png' alt="" />
+                </div>
+                </div>
+            </div>
+            </div>
+            <div className='col-sm'>
+            <div data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true" className='card mt-3'>
+            <a href="https://github.com/Dimas1402/Kulina-UI-ProductListPage" target="_blank"  rel="noopener noreferrer" >
+                <img
+                className='card-img-top img-fluid img-pro'
+                src={require('../../Assets/kulinaa.png')}
+                alt=''
+                />
+                </a>
+                <div className='card-body'>
+                <h5 className='card-title'>Kulina UI List page</h5>
+                <p className='card-text'>Create a UI web menu list for the mobile version</p>
+                <div  className="img-projek m-1">
+                <img data-toggle="tooltip" data-placement="bottom" title="React Native" className='m-1' style={{width:'20px', height:'20px'}} src='https://cdn.worldvectorlogo.com/logos/react.svg' alt="" />
+                <img data-toggle="tooltip" data-placement="bottom" title="Bootstrap" className='m-1' style={{width:'20px', height:'20px'}} src='https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg' alt="" />
+                </div>
+                </div>
+            </div>
+            </div>
+            <div className='col-sm'>
+            <div data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true" className='card mt-3'>
+            <a href="https://prayer-time-app.netlify.app/" target="_blank"  rel="noopener noreferrer" >
+                <img
+                className='card-img-top img-fluid img-pro'
+                src={require('../../Assets/prayertime.png')}
+                alt=''
+                />
+                </a>
+                <div className='card-body'>
+                    
+                <h5 className='card-title'>Prayer Time App</h5>
+                <p className='card-text'>Developed a prayer time application with a mentor and frontend team from the Pondok Programmer </p>
+                <div  className="img-projek m-1">
+                <img data-toggle="tooltip" data-placement="bottom" title="React Native" className='m-1' style={{width:'20px', height:'20px'}} src='https://cdn.worldvectorlogo.com/logos/react.svg' alt="" />
+                <img data-toggle="tooltip" data-placement="bottom" title="Bootstrap" className='m-1' style={{width:'20px', height:'20px'}} src='https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg' alt="" />
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
         </>
     )
